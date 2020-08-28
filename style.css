@@ -131,8 +131,11 @@ p{
     display: flex;
 }
 
+.mv-transparent-box{
+    width: 55%;
+    margin-right: 4px;
+}
 .mv-yellow-box{
-    margin-top: 303px;
     height: 50px;
     width: 55%;
     background-color: #F3CE00;
@@ -270,8 +273,8 @@ p{
     font-weight: bold;
     height: 50px;
     line-height: 50px;
-    /* max-width: 368px; */
-    width: 100%;
+    width: 380px;
+    max-width: 100%;
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease 0s;
