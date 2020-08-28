@@ -119,13 +119,14 @@ p{
 .mv-content-images{
     position: absolute;
     left: 10%;
-    top: -26px;
+    top: -20px;
 }
 
-.mv-content-images img{
+/* .mv-content-images img{
     width: 622px;
     height: 428px;
-}
+} */
+
 .mv-content-description-wrapper{
     color: #1A1A1A;
     display: flex;
