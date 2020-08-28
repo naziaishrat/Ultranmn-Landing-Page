@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="410" height="325" viewBox="0 0 410 325">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.521" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0c4af2"/>
+      <stop offset="1" stop-color="#1109e2"/>
+    </linearGradient>
+  </defs>
+  <g id="純度" transform="translate(0 0.123)">
+    <rect id="Bg" width="410" height="325" rx="16" transform="translate(0 -0.123)" fill="#fff"/>
+    <text id="純度-2" data-name="純度" transform="translate(30 39.877)" fill="#1a1a1a" font-size="21" font-family="SourceHanSans-Bold, Source Han Sans" font-weight="700"><tspan x="0" y="0">純度</tspan></text>
+    <rect id="Line" width="362" height="1" transform="translate(24 53.877)" fill="#0d3bd1"/>
+    <text id="Ultra_NMN_9600" data-name="Ultra NMN
+9600" transform="translate(101 98.877)" fill="#0b3bd8" font-size="14" font-family="SourceHanSans-Bold, Source Han Sans" font-weight="700"><tspan x="-70.812" y="0">Ultra NMN</tspan><tspan x="-32.984" y="16">9600</tspan></text>
+    <text id="国内他社1" transform="translate(101 152.877)" fill="#1a1a1a" font-size="14" font-family="SourceHanSans-Bold, Source Han Sans" font-weight="700"><tspan x="-64.246" y="0">国内他社1</tspan></text>
+    <text id="米国他社" transform="translate(101 242.877)" fill="#1a1a1a" font-size="14" font-family="SourceHanSans-Bold, Source Han Sans" font-weight="700"><tspan x="-56" y="0">米国他社</tspan></text>
+    <rect id="Blue_Bar" data-name="Blue Bar" width="264" height="32" transform="translate(114 85.877)" fill="url(#linear-gradient)"/>
+    <rect id="Gray_Bar" data-name="Gray Bar" width="6.48" height="32" transform="translate(114 176)" fill="#333" opacity="0.101"/>
+    <rect id="Gray_Bar-2" data-name="Gray Bar" width="210.19" height="32" transform="translate(114 133)" fill="#333" opacity="0.101"/>
+    <rect id="Gray_Bar-3" data-name="Gray Bar" width="143.34" height="32" transform="translate(114 221)" fill="#333" opacity="0.101"/>
+    <text id="_99.8_" data-name="99.8%" transform="translate(333 105.877)" fill="#ffd800" font-size="12" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-weight="700"><tspan x="0" y="0">99.8%</tspan></text>
+    <text id="純度非公開" transform="translate(122 196.877)" fill="#1a1a1a" font-size="12" font-family="SourceHanSans-Bold, Source Han Sans" font-weight="700" opacity="0.5"><tspan x="0" y="0">純度非公開</tspan></text>
+    <text id="_99.4_" data-name="99.4%" transform="translate(279 152.877)" fill="#1a1a1a" font-size="12" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-weight="700" opacity="0.5"><tspan x="0" y="0">99.4%</tspan></text>
+    <text id="_98_" data-name="98%" transform="translate(223 241.877)" fill="#1a1a1a" font-size="12" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-weight="700" opacity="0.5"><tspan x="0" y="0">98%</tspan></text>
+    <text id="香港他社" transform="translate(101 287.877)" fill="#1a1a1a" font-size="14" font-family="SourceHanSans-Bold, Source Han Sans" font-weight="700"><tspan x="-56" y="0">香港他社</tspan></text>
+    <text id="国内他社2" transform="translate(101 197.877)" fill="#1a1a1a" font-size="14" font-family="SourceHanSans-Bold, Source Han Sans" font-weight="700"><tspan x="-64.246" y="0">国内他社2</tspan></text>
+    <rect id="Gray_Bar-4" data-name="Gray Bar" width="143.34" height="32" transform="translate(114 266)" fill="#333" opacity="0.101"/>
+  </g>
+</svg>
