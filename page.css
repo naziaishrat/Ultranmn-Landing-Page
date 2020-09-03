@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+body{
+    background-color: #33333308;
+    font-family: "源ノ角ゴシック";
+}
+.inner {
+    margin: 0 auto;
+    max-width: 100%;
+    /* padding: 80px 0;
+    padding-top: 68px; */
+    width: 932px;
+}
+::placeholder {
+    font-size: 16px;
+    color: rgba(26, 26, 26, 0.3);
+}
+
+
+/* header, footer{
+    background-color: black;
+}
+
+header > .inner, footer > .inner{
+	padding: 27px 0;
+}
+
+header h1{
+    line-height: 18px;
+}
+
+footer > .inner{
+    display: flex;
+    justify-content: space-between
+} */
+
+
+/* -----------------section--------------------------- */
+
+
+section > .inner{
+    margin: 0 auto;
+	max-width: 100%;
+	padding: 64px 0 120px;
+	width: 791px;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom:80px; 
+    /* margin-top: 64px; */ 
+}
+
+.section-title > p{
+    padding-top: 24px;
+}
+
+
+
+/* -----------c ontact-form  Wrapper------------------ */
+
+h3{
+    color: #0D3BD1;
+    font-size: 21px;
+    padding-bottom: 40.5px;
+
+}
+
+/* --------------------contact-form  general------------------ */
+
+
+.contact-dl > div{
+    border-top: 1px solid rgba(51, 51, 51, 0.15) ;
+    padding:24.5px 0px;
+}
+
+.contact-dl:last-of-type{
+    border-bottom: 1px solid rgba(51, 51, 51, 0.15) ;
+}
+
+.contact-label {
+	display: inline-block;
+	font-weight: bold;
+    max-width: 197px;
+    width: 100%;
+    margin: 7px 40px 0px 0px;
+    vertical-align: top;
+}
+
+
+.contact-required{
+    float: right;
+    max-width: 36px;
+    width: 100%;
+    height:20px;
+    line-height: 20px;
+    background-color: #FFD800;
+    color: #D10D0D;
+    font-size: 12px;
+    text-align: center;
+}
+.contact-input {
+    display: inline-block;
+    width: calc(100% - 241px)
+    /* max-width: 452px;
+    width:100%;
+    height: 40px;
+    line-height: 40px; */
+}
+.contact-input input{
+    width: 452px;
+    max-width:100%;
+    height: 40px;
+    line-height: 40px;
+    /* width: 100%;
+    height: 100%; */
+    background-color: #FFFFFF;
+    border: 1px solid rgba(51, 51, 51, 0.3);
+    border-radius: 6px;
+    padding: 8px 0px 8px 16px;
+}
+.contact-input  span{
+    font-size: 14px;
+    color: rgba(26, 26, 26, 0.75);
+    display: block;
+    line-height: 20px;
+    margin-top:8px;
+}
+/* .contact-input > span > a{
+    color: #0D3BD1;
+    text-decoration: none;
+} */
+
+
+
+/* ------------radio button----------------------------- */
+/* 
+.contact-radio input[type="radio"] {
+    display: none;
+}
+
+.contact-radio .wpcf7-list-item:not(:last-child) label{
+    margin-bottom: 16px;
+}
+
+input[type="radio"] + span {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0.2em 0;
+    padding: 0 0 0 38px;
+    position: relative;
+}
+
+input[type="radio"] + span::before {
+    background: #fff;
+    border: 1px solid rgba(51, 51, 51, 0.3);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 22px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+}
+
+input[type="radio"]:checked + span::after {
+    -webkit-transform: translateY(-50%);
+    background: rgba(51, 51, 51, 1);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 10px;
+    left: 6px;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+} */
+
+
+/* --------------------------------------- */
+
+.contact-agreement{
+    margin-top: 80.5px;
+}
+.contact-agreement p.agreement-description{
+    padding-top: 24px;
+    color: rgba(26, 26, 26, 0.75);
+}
+
+.contact-agreement  .contact-dl{
+    padding-top: 40.5px;
+}
+
+input.agreement-number{
+    max-width: 64px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 8px;
+}
+.contact-input span.wpcf7-form-control-wrap:not(:first-child) input.agreement-number{
+    margin-left: 8px;
+}
+
+.contact-agreement span{
+    color: rgba(209, 13, 13, 1);
+    font-size: 14px;
+}
+
+
+.contact-send {
+    text-align: center;
+    margin-top: 80.5px;
+}
+
+.contact-send input[type="submit"] {
+    background-color: #fff;
+    color: #0D3BD1;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 46px;
+    line-height: 46px;
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    width: 288px;
+    border: 2px solid #0D3BD1;
+} 
+/* .contact-send input[type="submit"]:hover {
+    color: #fff;
+    background-color: #0D3BD1;
+}        */
+
+
+
+/* -------------------Contact form 7------------------- */
+span.wpcf7-form-control-wrap{
+    margin: 0;
+}
+span.your-zip-code, span.your-name-1, span.your-name-2, span.your-name-3{
+    display: inline-block;
+}
+
