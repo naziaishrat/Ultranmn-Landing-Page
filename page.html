@@ -31,22 +31,27 @@
             <div class="form-wrapper">
                 <form class="contact-form">
                     <div class="contact-agreement">
-                        <div>
-                            <h3>モニター調査へのご協力のお願い</h3>
-                            <p class="agreement-description">ご使用後（ご購入から約1ヶ月後）、お電話にて5分程、ご感想を伺う予定です。尚、メールアドレス宛にお送りする、同等のオンライン調査にご回答いただいた際にはお電話は差し上げません。</p>
-                        </div>
+                        <h3>モニター調査へのご協力のお願い</h3>
                         <dl class="contact-dl">
                             <div>
-                                <dt class="contact-label">電話番号<span class="contact-required">必須</span></dt>
-                                <dd class="contact-input">
-                                    <input class="agreement-number" name="prim1" type="text" id="prim1" size="3" class="required">-
-                                    <input class="agreement-number" name="prim2" type="text" id="prim2" size="3" class="required">-
-                                    <input class="agreement-number" name="prim3" type="text" id="prim3" size="4" class="required">
-                                    <span>※モニター調査以外の用途での電話は一切差し上げません。</span>
+                                <dt class="contact-label contact-label-input"><label><input type="checkbox" name="your-checkbox"><span class="contact-required">必須</span></label></dt>
+                                <dd class="contact-input agreement-description">
+                                    ご使用後（ご購入から約1ヶ月後）、お電話にて5分程、ご感想を伺う予定です。尚、メールアドレス宛にお送りする、同等のオンライン調査にご回答いただいた際にはお電話は差し上げません。
                                 </dd>
                             </div>
                             <div>
-                                <dt class="contact-label">電話可能な時間帯<span class="contact-required">必須</span></dt>
+                                <dt class="contact-label">電話番号<span class="contact-required">必須</span></dt>
+                                <dd class="contact-input">
+                                    <input class="agreement-number" name="prim1" type="text" id="prim1" size="3" class="required">
+                                    <span>-</span>
+                                    <input class="agreement-number" name="prim2" type="text" id="prim2" size="3" class="required">
+                                    <span>-</span>
+                                    <input class="agreement-number" name="prim3" type="text" id="prim3" size="4" class="required">
+                                    <span class="monitor-warning">※モニター調査以外の用途での電話は一切差し上げません。</span>
+                                </dd>
+                            </div>
+                            <div>
+                                <dt class="contact-label">電話可能な時間帯</dt>
                                 <dd class="contact-input"><input type="text" value="" name="your-name" placeholder="例）月・金の15時から17時"></dd>
                             </div>
                         </dl>
@@ -61,3 +66,15 @@
             </div>
         </div>
     </section>
+    <footer id="footer">
+        <div class="inner">
+            <div class="footer-logo">
+                <a href=""><img src="images/logo.svg" alt="ULTRANMN"></a>
+            </div>
+            <div>
+                <a href=""><img src="images/copyright.svg" alt="copyright"></a>
+            </div>
+        </div><!-- /inner -->
+    </footer><!-- /footer -->
+</body>
+</html>
