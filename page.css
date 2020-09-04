@@ -41,7 +41,8 @@ footer > .inner{
 section > .inner{
     margin: 0 auto;
 	max-width: 100%;
-	padding: 64px 0 120px;
+    padding: 64px 0 120px;
+    margin-top:64px;
 	width: 791px;
 }
 
@@ -51,45 +52,94 @@ section > .inner{
     /* margin-top: 64px; */ 
 }
 
+h2{
+    font-size: 32px;
+}
 .section-title > p{
     padding-top: 24px;
+    color:rgba(26, 26, 26, 0.75)
 }
-
-
-
-/* -----------c ontact-form  Wrapper------------------ */
 
 h3{
     color: #0D3BD1;
     font-size: 21px;
-    padding-bottom: 40.5px;
-
+    padding-bottom: 24px;
 }
-
-/* --------------------contact-form  general------------------ */
 
 
 .contact-dl > div{
-    border-top: 1px solid rgba(51, 51, 51, 0.15) ;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.15) ;
     padding:24.5px 0px;
 }
 
-.contact-dl:last-of-type{
-    border-bottom: 1px solid rgba(51, 51, 51, 0.15) ;
+.contact-dl > div:first-of-type{
+    padding-top:0px;
 }
 
 .contact-label {
 	display: inline-block;
 	font-weight: bold;
-    max-width: 197px;
+    /* max-width: 197px; */
+    max-width: 150px;
     width: 100%;
     margin: 7px 40px 0px 0px;
     vertical-align: top;
 }
 
 
+.contact-label-input {
+    position: relative;
+    max-width: 75px;
+    text-align: right;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+input[type="checkbox"] + span {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+input[type="checkbox"] + span::before {
+    -webkit-transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+}
+
+input[type="checkbox"]:checked + span::after {
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    border-bottom: 3px solid #3f51b5;
+    border-left: 3px solid #3f51b5;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    content: "";
+    display: block;
+    margin-top: -0.2em;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    left: 3px;
+    height: 11px;
+    width: 19px;
+}
+
 .contact-required{
-    float: right;
+    /* float: right; */
+    margin-left: 18px;
+    padding: 2px 6px;
     max-width: 36px;
     width: 100%;
     height:20px;
@@ -101,118 +151,51 @@ h3{
 }
 .contact-input {
     display: inline-block;
-    width: calc(100% - 241px)
-    /* max-width: 452px;
-    width:100%;
-    height: 40px;
-    line-height: 40px; */
+    width: calc(100% - 210px)
 }
 .contact-input input{
     width: 452px;
     max-width:100%;
     height: 40px;
     line-height: 40px;
-    /* width: 100%;
-    height: 100%; */
     background-color: #FFFFFF;
     border: 1px solid rgba(51, 51, 51, 0.3);
     border-radius: 6px;
     padding: 8px 0px 8px 16px;
 }
-.contact-input  span{
-    font-size: 14px;
-    color: rgba(26, 26, 26, 0.75);
-    display: block;
-    line-height: 20px;
-    margin-top:8px;
-}
-/* .contact-input > span > a{
-    color: #0D3BD1;
-    text-decoration: none;
-} */
 
 
 
-/* ------------radio button----------------------------- */
-/* 
-.contact-radio input[type="radio"] {
-    display: none;
-}
 
-.contact-radio .wpcf7-list-item:not(:last-child) label{
-    margin-bottom: 16px;
-}
-
-input[type="radio"] + span {
-    cursor: pointer;
-    display: inline-block;
-    margin: 0 0.2em 0;
-    padding: 0 0 0 38px;
-    position: relative;
-}
-
-input[type="radio"] + span::before {
-    background: #fff;
-    border: 1px solid rgba(51, 51, 51, 0.3);
-    border-radius: 50%;
-    content: "";
-    display: block;
-    height: 22px;
-    left: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 22px;
-}
-
-input[type="radio"]:checked + span::after {
-    -webkit-transform: translateY(-50%);
-    background: rgba(51, 51, 51, 1);
-    border-radius: 50%;
-    content: "";
-    display: block;
-    height: 10px;
-    left: 6px;
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 10px;
-} */
-
-
-/* --------------------------------------- */
-
-.contact-agreement{
-    margin-top: 80.5px;
-}
-.contact-agreement p.agreement-description{
-    padding-top: 24px;
+.agreement-description{
     color: rgba(26, 26, 26, 0.75);
 }
 
-.contact-agreement  .contact-dl{
-    padding-top: 40.5px;
-}
 
 input.agreement-number{
     max-width: 64px;
     width: 100%;
     height: 40px;
     line-height: 40px;
-    margin-right: 8px;
 }
-.contact-input span.wpcf7-form-control-wrap:not(:first-child) input.agreement-number{
+
+/* .contact-input span.wpcf7-form-control-wrap:not(:first-child) input.agreement-number{
     margin-left: 8px;
+} */
+
+.contact-input span{
+    margin: 0px 8px;
 }
 
-.contact-agreement span{
-    color: rgba(209, 13, 13, 1);
+.contact-agreement .monitor-warning{
     font-size: 14px;
+    display: block;
+    line-height: 20px;
+    margin:8px 0px 0px;
+    color: #D10D0D;
 }
 
-
-.contact-send {
+/* .contact-send {
     text-align: center;
     margin-top: 80.5px;
 }
@@ -232,12 +215,7 @@ input.agreement-number{
     transition: all 0.3s ease 0s;
     width: 288px;
     border: 2px solid #0D3BD1;
-} 
-/* .contact-send input[type="submit"]:hover {
-    color: #fff;
-    background-color: #0D3BD1;
-}        */
-
+}  */
 
 
 /* -------------------Contact form 7------------------- */
@@ -248,3 +226,52 @@ span.your-zip-code, span.your-name-1, span.your-name-2, span.your-name-3{
     display: inline-block;
 }
 
+
+/* -----------------------------------------------------------------------------------------------------
+                                                Mobile
+--------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    header > .inner ,section > .inner{
+        padding-right: 18px;
+        padding-left: 18px;;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+    .section-title > p{
+        padding-top: 16px;
+    }
+
+    h3{
+        font-size: 18px;
+        padding-bottom: 12px;
+    }
+
+
+    .contact-dl > div {
+        padding: 16.5px 0px;
+    }
+
+    .contact-label {
+        display: block;
+        margin-bottom: 12px;
+    }
+    .contact-input {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-input input {
+        width: 100%;
+        padding: 7px 0px 9px 16px;
+    }
+
+    .agreement-description{
+        font-size: 14px;
+    }
+}
