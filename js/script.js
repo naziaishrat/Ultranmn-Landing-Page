@@ -1,72 +1,4 @@
-jQuery(document).ready(function() {
-  var tel_value_1;
-  var tel_value_2;
-  var tel_value_3;
-  jQuery('input.agreement-number').on("blur", function(){
-        tel_1 = jQuery.trim(jQuery("#tel-1").val())
-        if(tel_1 == "" || tel_1 == undefined){
-          tel_1 = 0
-        }
-        tel_2 = jQuery.trim(jQuery("#tel-2").val())
-        if(tel_2 == "" || tel_2 == undefined){
-          tel_2 = 0
-        }
-        tel_3 = jQuery.trim(jQuery("#tel-3").val())
-        if(tel_3 == "" || tel_3 == undefined){
-          tel_3 = 0
-        }
-        if(!tel_1 == 0){
-          jQuery("#tel-1").css("background-color","#fff")
-          tel_value_1 = 1
-        }else{
-          jQuery("#tel-1").css("background-color","rgba(226, 217, 217)")
-          tel_value_1 = 0
-        }
-        if(!tel_2 == 0){
-          jQuery("#tel-2").css("background-color","#fff")
-          tel_value_2 = 1
-        }else{
-          jQuery("#tel-2").css("background-color","rgba(226, 217, 217)")
-          tel_value_2 = 0
-        }
-        if(!tel_3 == 0){
-          jQuery("#tel-3").css("background-color","#fff")
-          tel_value_3 = 1
-        }else{
-          jQuery("#tel-3").css("background-color","rgba(226, 217, 217)")
-          tel_value_3 = 0
-        }
-        shopify_btn_display(tel_value_1, tel_value_2, tel_value_3)
-  })
-
-  jQuery("input[type='checkbox']").on("click", function(){
-    shopify_btn_display(tel_value_1, tel_value_2, tel_value_3);
-  })
-  
-  
- });
-
-
- function shopify_btn_display(tel_value_1, tel_value_2, tel_value_3){
-  
-  var checkbox_value = jQuery("input[type='checkbox']").is(":checked")
-  var phone_value = 0
-  if(tel_value_1 == 1 && tel_value_2 == 1 && tel_value_3 == 1){
-    phone_value = 1
-  }
-  if(checkbox_value == 1 && phone_value ==1){
-    jQuery(".contact-send").css("display","none");
-    jQuery("#product-component-1599108119609").css("display","block");
-  }else{
-    jQuery(".contact-send").css("display","block");
-    jQuery("#product-component-1599108119609").css("display","none");
-  }
-
- }
-
-
-
-jQuery(function($){
+jQuery(document).ready(function(){
   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
   if (window.ShopifyBuy) {
     if (window.ShopifyBuy.UI) {
@@ -231,3 +163,69 @@ jQuery(function($){
 });
 
 
+jQuery(document).ready(function() {
+  jQuery(".shopify-btn").hide();
+  var tel_value_1;
+  var tel_value_2;
+  var tel_value_3;
+  jQuery('input.agreement-number').on("blur", function(){
+        tel_1 = jQuery.trim(jQuery("#tel-1").val())
+        if(tel_1 == "" || tel_1 == undefined){
+          tel_1 = 0
+        }
+        tel_2 = jQuery.trim(jQuery("#tel-2").val())
+        if(tel_2 == "" || tel_2 == undefined){
+          tel_2 = 0
+        }
+        tel_3 = jQuery.trim(jQuery("#tel-3").val())
+        if(tel_3 == "" || tel_3 == undefined){
+          tel_3 = 0
+        }
+        if(!tel_1 == 0){
+          jQuery("input[id='tel-1']").css("background-color","#fff")
+          tel_value_1 = 1
+        }else{
+          jQuery("#tel-1").css("background-color","rgba(226, 217, 217)")
+          tel_value_1 = 0
+        }
+        if(!tel_2 == 0){
+          jQuery("#tel-2").css("background-color","#fff")
+          tel_value_2 = 1
+        }else{
+          jQuery("#tel-2").css("background-color","rgba(226, 217, 217)")
+          tel_value_2 = 0
+        }
+        if(!tel_3 == 0){
+          jQuery("#tel-3").css("background-color","#fff")
+          tel_value_3 = 1
+        }else{
+          jQuery("#tel-3").css("background-color","rgba(226, 217, 217)")
+          tel_value_3 = 0
+        }
+        shopify_btn_display(tel_value_1, tel_value_2, tel_value_3)
+  })
+
+  jQuery("input[type='checkbox']").on("click", function(){
+    shopify_btn_display(tel_value_1, tel_value_2, tel_value_3);
+  })
+  
+  
+ });
+
+
+ function shopify_btn_display(tel_value_1, tel_value_2, tel_value_3){
+  
+  var checkbox_value = jQuery("input[type='checkbox']").is(":checked")
+  var phone_value = 0
+  if(tel_value_1 == 1 && tel_value_2 == 1 && tel_value_3 == 1){
+    phone_value = 1
+  }
+  if(checkbox_value == 1 && phone_value ==1){
+    jQuery(".contact-send").hide();
+    jQuery(".shopify-btn").show();
+  }else{
+    jQuery(".contact-send").show();
+    jQuery(".shopify-btn").hide();
+  }
+
+ }
