@@ -16,6 +16,10 @@ body{
     color: rgba(26, 26, 26, 0.3);
 }
 
+input:-internal-autofill-selected {
+    background-color: #fff !important;
+}
+
 
 /* header, footer{
     background-color: black;
@@ -176,7 +180,6 @@ input.agreement-number, input[type='checkbox'] + span::before{
     background-color:rgba(226, 217, 217)
 }
 
-
 .agreement-description{
     color: rgba(26, 26, 26, 0.75);
 }
@@ -205,14 +208,14 @@ input.agreement-number{
     color: #D10D0D;
 }
 
-/* .contact-send {
+.contact-send {
     text-align: center;
     margin-top: 80.5px;
 }
 
 .contact-send input[type="submit"] {
     background-color: #fff;
-    color: #0D3BD1;
+    color: rgba(175,178,187);
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
@@ -224,8 +227,8 @@ input.agreement-number{
     text-decoration: none;
     transition: all 0.3s ease 0s;
     width: 288px;
-    border: 2px solid #0D3BD1;
-}  */
+    border: 2px solid rgba(175,178,187);
+} 
 
 
 /* -------------------Contact form 7------------------- */
@@ -244,6 +247,9 @@ span.your-zip-code, span.your-name-1, span.your-name-2, span.your-name-3{
     margin: auto;
 }
 
+#product-component-1599108119609, .shopify-buy-frame--product{
+    display: none
+}
 
 /* -----------------------------------------------------------------------------------------------------
                                                 Mobile
