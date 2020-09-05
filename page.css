@@ -16,8 +16,11 @@ body{
     color: rgba(26, 26, 26, 0.3);
 }
 
-input:-internal-autofill-selected {
-    background-color: #fff !important;
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 
@@ -176,7 +179,11 @@ input[type="checkbox"]:checked + span::after {
     padding: 8px 0px 8px 16px;
 }
 
-input.agreement-number, input[type='checkbox'] + span::before{
+/* input.agreement-number, input[type='checkbox'] + span::before{
+    background-color:rgba(226, 217, 217)
+} */
+
+input.agreement-number, input[type="checkbox"] + span::before{
     background-color:rgba(226, 217, 217)
 }
 
@@ -196,9 +203,6 @@ input.agreement-number{
     margin-left: 8px;
 } */
 
-.contact-input span{
-    margin: 0px 8px;
-}
 
 .contact-agreement .monitor-warning{
     font-size: 14px;
@@ -247,9 +251,9 @@ span.your-zip-code, span.your-name-1, span.your-name-2, span.your-name-3{
     margin: auto;
 }
 
-#product-component-1599108119609, .shopify-buy-frame--product{
+/* .shopify-btn{
     display: none
-}
+} */
 
 /* -----------------------------------------------------------------------------------------------------
                                                 Mobile
