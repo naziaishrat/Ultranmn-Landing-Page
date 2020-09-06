@@ -1,4 +1,6 @@
-// jQuery(document).ready(function(){
+jQuery(document).ready(function(){
+ ShopifyBuyInit();
+}); 
 
  function shopify_dispaly(){
       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -227,8 +229,7 @@ jQuery(document).ready(function() {
   }
   if(checkbox_value == 1 && phone_value ==1){
     jQuery(".contact-send").hide();
-    shopify_dispaly()
-    // jQuery(".shopify-btn").show('fast');
+    (".shopify-btn").show();
   }else{
     jQuery(".contact-send").show();
     jQuery("#product-component-1599108119609").empty();
