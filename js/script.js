@@ -25,7 +25,7 @@
         });
 
         ShopifyBuy.UI.onReady(client).then(function (ui) {
-          jQuery(".contact-send").hide();
+         
           ui.createComponent('product', {
             id: '5718755344552',
             node: document.getElementById('product-component-1599108119609'),
@@ -162,6 +162,7 @@
                 }
               },
           });
+          jQuery(".contact-send").hide();
         });
       }
 }
