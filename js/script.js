@@ -23,8 +23,7 @@
           domain: 'ultranmn-jp.myshopify.com',
           storefrontAccessToken: 'e722f8662dcaefd88779db1a61cc85cf',
         });
-       $('#product-component-1599108119609').remove();
-        $('.shopify-btn').append('<div id="product-component-1599108119609"></div>');
+
         ShopifyBuy.UI.onReady(client).then(function (ui) {
           ui.createComponent('product', {
             id: '5718755344552',
@@ -229,7 +228,14 @@ jQuery(document).ready(function() {
   }
   if(checkbox_value == 1 && phone_value ==1){
     jQuery(".contact-send").hide();
+    if($('#product-component-1599108119609').is(':empty'))
+    { 
+    shopify_dispaly();
+    }
+   else
+   {
     jQuery(".shopify-btn").show();
+   }
   }else{
     jQuery(".contact-send").show();
     jQuery("#product-component-1599108119609").empty();
