@@ -169,7 +169,6 @@
 
 jQuery(document).ready(function() {
 
- ShopifyBuyInit();
  
   var tel_value_1;
   var tel_value_2;
