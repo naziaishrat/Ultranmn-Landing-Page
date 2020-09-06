@@ -24,7 +24,7 @@
           storefrontAccessToken: 'e722f8662dcaefd88779db1a61cc85cf',
         });
        $('#product-component-1599108119609').remove();
-        $('.shopify-btn').add('<div id="product-component-1599108119609"></div>');
+        $('.shopify-btn').append('<div id="product-component-1599108119609"></div>');
         ShopifyBuy.UI.onReady(client).then(function (ui) {
           ui.createComponent('product', {
             id: '5718755344552',
