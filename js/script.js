@@ -1,6 +1,4 @@
-jQuery(document).ready(function(){
- ShopifyBuyInit();
-}); 
+
 
  function shopify_dispaly(){
       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -171,7 +169,9 @@ jQuery(document).ready(function(){
 
 
 jQuery(document).ready(function() {
-  // jQuery(".shopify-btn").hide();
+
+ ShopifyBuyInit();
+ 
   var tel_value_1;
   var tel_value_2;
   var tel_value_3;
