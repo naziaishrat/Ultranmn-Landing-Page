@@ -229,7 +229,7 @@ jQuery(document).ready(function() {
   }
   if(checkbox_value == 1 && phone_value ==1){
     jQuery(".contact-send").hide();
-    (".shopify-btn").show();
+    jQuery(".shopify-btn").show();
   }else{
     jQuery(".contact-send").show();
     jQuery("#product-component-1599108119609").empty();
